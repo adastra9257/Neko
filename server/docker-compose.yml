@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+
+  server:
+    image: neko-server
+    build: ./build/server
+    ports:
+      - "3478:3478/udp"
+      - "9000:9000"
+    restart: always
